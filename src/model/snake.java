@@ -28,6 +28,7 @@ public class snake {
 		this.oldhead = this.head;
 		;
 		;
+		;
 		this.head = newHead;
 		if (this.tail.size() > 0) {
 			this.tail.getFirst().setSize(newHead);
