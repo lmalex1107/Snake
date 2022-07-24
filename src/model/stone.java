@@ -27,10 +27,14 @@ public class stone {
 	public Dimension createStone() {
 		if (this.stillexists == false) {
 			this.position = new Dimension();
-			int width =  1+ randomcreator.nextInt(800);
-			int height = 1+ randomcreator.nextInt(500);
+			int width =  randomcreator.nextInt(790);
+			int height = randomcreator.nextInt(490);
 			this.position.setSize(width, height);
 			this.stillexists = true;
+			System.out.println("Stone");
+			System.out.println(width);
+			System.out.println(height);
+			System.out.println("-----");
 		}
 		
 		return this.position;

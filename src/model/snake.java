@@ -136,12 +136,12 @@ public class snake {
 	}
 	
 	public void move(Dimension position) {
-		System.out.println("move-Test");
-		for (int i = 0; i < this.tail.size(); i++) {
-			System.out.println(this.tail.get(i).getWidth());
-			System.out.println(this.tail.get(i).getHeight());
-			System.out.println("---");
-		}
+		//System.out.println("move-Test");
+		//for (int i = 0; i < this.tail.size(); i++) {
+			//System.out.println(this.tail.get(i).getWidth());
+			//System.out.println(this.tail.get(i).getHeight());
+			//System.out.println("---");
+		//}
 		Dimension newposition = new Dimension ((int) position.getWidth(), (int) position.getHeight() );
 		this.tail.addFirst(newposition);
 		this.tail.removeLast();
